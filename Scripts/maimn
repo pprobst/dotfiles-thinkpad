@@ -1,0 +1,4 @@
+#!/bin/sh
+
+maim --hidecursor ~/Images/Screenshots/desktop/"Screenshot $(date +"%Y-%m-%d") at $(date +"%H.%M".%S)".png
+notify-send -t 0 "*snap*"

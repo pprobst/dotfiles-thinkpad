@@ -1,0 +1,19 @@
+set statusbar-bg            "#0A101B"
+set statusbar-fg            "#e8e8de"
+set completion-bg           "#0A101B"
+set completion-fg           "#bdbdbd"
+set completion-highlight-bg "#0D0F12"
+set completion-highlight-fg "#78a4ff"
+set inputbar-bg             "#0D0F12"
+set inputbar-fg             "#e8e8de"
+set notification-error-bg   "#0D0F12"
+set notification-error-fg   "#d48381"
+set notification-warning-bg "#0D0F12"
+set notification-warning-fg "#f9cc8f"
+set recolor-darkcolor       "#e8e8de"
+set recolor-lightcolor      "#0A101B"
+
+map = zoom in
+map - zoom out
+map + zoom 100%
+map i set recolor

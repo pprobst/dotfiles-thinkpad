@@ -1,0 +1,24 @@
+#!/bin/sh
+
+cp -r ~/.ncmpcpp/ /home/probst/Repos/dotfiles-thinkpad
+cp -r ~/Scripts/ /home/probst/Repos/dotfiles-thinkpad
+cp ~/.Xresources /home/probst/Repos/dotfiles-thinkpad
+cp ~/.bashrc /home/probst/Repos/dotfiles-thinkpad
+cp ~/.vimrc /home/probst/Repos/dotfiles-thinkpad
+cp ~/.xinitrc /home/probst/Repos/dotfiles-thinkpad
+cp ~/.pqivrc /home/probst/Repos/dotfiles-thinkpad
+cp ~/.xmonad/xmonad.hs /home/probst/Repos/dotfiles-thinkpad/.xmonad
+cp ~/.xmonad/xmobar.hs /home/probst/Repos/dotfiles-thinkpad/.xmonad
+cp -r ~/.config/compton /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.config/dunst /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.config/htop /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.config/mpd /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.config/mpv /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.config/neofetch /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.config/pcmanfm/default /home/probst/Repos/dotfiles-thinkpad/.config/pcmanfm
+cp -r ~/.config/ranger /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.config/zathura /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.config/vifm /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.config/fish /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.config/nvim /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.fonts/ /home/probst/Repos/dotfiles-thinkpad

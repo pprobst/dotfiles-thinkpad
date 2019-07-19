@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# selects an area to take a screnshot
+maim --hidecursor -s ~/Images/Screenshots/"Screenshot $(date +"%Y-%m-%d") at $(date +"%H.%M".%S)".png

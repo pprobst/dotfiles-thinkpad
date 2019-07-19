@@ -1,0 +1,4 @@
+#!/bin/sh
+# Sets the background. If given an argument, will set file as background.
+[ ! -z "$1" ] && cp "$1" ~/Images/Wallpapers/current-thinkpad.png && notify-send -t 5000 -i "$HOME/Images/Wallpapers/current-thinkpad.png" "Wallpaper changed."
+feh --bg-fill ~/Images/Wallpapers/current-thinkpad.png
