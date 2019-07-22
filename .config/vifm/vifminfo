@@ -10,44 +10,14 @@
 
 # TUI:
 al
-q0
+q1
 v2
 ov
 m-1
-l-2
+l-11,2
 r-11,2
 
 # Left window history (oldest to newest):
-d/home/probst/Images/Wallpapers/tiles-and-such-master/[J] Retro Patterns
-	UnknownOrigins
-3
-d/home/probst/Images/Wallpapers/tiles-and-such-master/[J] Retro Patterns/UnknownOrigins
-	hex_weave.png
-11
-d/home/probst/Images/Wallpapers/tiles-and-such-master/[J] Retro Patterns
-	TextureArchive
-4
-d/home/probst/Images/Wallpapers/tiles-and-such-master/[J] Retro Patterns/TextureArchive
-	Texture_brown_034.jpg
-16
-d/home/probst/Images/Wallpapers/tiles-and-such-master/[J] Retro Patterns
-	Patterns
-5
-d/home/probst/Images/Wallpapers/tiles-and-such-master/[J] Retro Patterns/Patterns
-	pattern_065.gif
-31
-d/home/probst/Images/Wallpapers/tiles-and-such-master/[J] Retro Patterns
-	pattern images
-6
-d/home/probst/Images/Wallpapers/tiles-and-such-master/[J] Retro Patterns/pattern images
-	14 (2).png
-33
-d/home/probst/Images/Wallpapers/tiles-and-such-master/[J] Retro Patterns
-	AIcons
-8
-d/home/probst/Images/Wallpapers/tiles-and-such-master/[J] Retro Patterns/AIcons
-	slate.gif
-9
 d/home/probst/Images/Wallpapers/tiles-and-such-master/[J] Retro Patterns
 	JAC ClipArt
 9
@@ -316,8 +286,38 @@ d/home/probst/ayanami/Curb Your Enthusiasm Season 1, 2, 3, 4, 5, 6, 7 & 8 + Extr
 	Season 6
 4
 d/home/probst/ayanami/Curb Your Enthusiasm Season 1, 2, 3, 4, 5, 6, 7 & 8 + Extras DVDRip TSV/Season 6
-	Curb Your Enthusiasm Season 6 Episode 02 - The Anonymous Donor.avi
+	Curb Your Enthusiasm Season 6 Episode 03 - The Ida Funkhouser Roadside Memorial.avi
+8
+d/home/probst/ayanami
+	..
+0
+d/home/probst/Images/Wallpapers
+	stone.png
+28
+d/home/probst
+	ayanami
+1
+d/home/probst/ayanami
+	Temporada
+2
+d/home/probst/ayanami/Temporada
+	[HorribleSubs] Kimetsu no Yaiba - 16 [1080p].mkv
+1
+d/home/probst/ayanami
+	Curb Your Enthusiasm Season 1, 2, 3, 4, 5, 6, 7 & 8 + Extras DVDRip TSV
+1
+d/home/probst/ayanami/Curb Your Enthusiasm Season 1, 2, 3, 4, 5, 6, 7 & 8 + Extras DVDRip TSV
+	Season 6
+5
+d/home/probst/ayanami/Curb Your Enthusiasm Season 1, 2, 3, 4, 5, 6, 7 & 8 + Extras DVDRip TSV/Season 6
+	Curb Your Enthusiasm Season 6 Episode 04 - The Lefty Call.avi
 9
+d/home/probst/ayanami
+	..
+0
+d/home/probst/Images/Wallpapers
+	ohw.png
+20
 d
 
 # Right window history (oldest to newest):
@@ -476,11 +476,11 @@ D
 :sortn
 :cd /run/media/probst/
 :cd /run/media/
-:1
-:cd ~/Images/Wallpapers/
 :cd /media/
 :sort
 :cd
+:cd ~/Images/Wallpapers/
+:1
 :q
 
 # Search history (oldest to newest):
@@ -563,7 +563,6 @@ D
 /133
 /guei
 /cat
-/stone
 /train
 /kan
 /136/
@@ -584,6 +583,7 @@ D
 /147
 /148
 /jinr
+/stone
 
 # Prompt history (oldest to newest):
 pSeinfeld.S04E12.The.Airport.1080p.HEVC.x265.10bit.Bearfish.mkv
