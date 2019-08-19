@@ -5,9 +5,10 @@
 Config {
     position = Top,
     --font = "xft:Iosevka:size=10,M+ 1p:style=regular:size=10:antialias=true,Siji:size=10:antialias=true", -- (siji is converted to ttf!)
-    font = "xft:cherry:size=9,Fixed:style=ja:size=10,Siji:size=10",
+    font = "xft:DejaVu Serif:size=10,M+ 1p:style=regular:size=10:antialias=true,Siji:size=10:antialias=true", -- (siji is converted to ttf!)
+    --font = "xft:cherry:size=9,Fixed:style=ja:size=10,Siji:size=10",
     bgColor = "#FEF6FB",
-    fgColor = "#3F3051",
+    fgColor = "#574E62",
     alpha = 255,
     border = BottomB,
     borderColor = "#EBD7E4",
@@ -41,7 +42,7 @@ Config {
             "-t","<fc=#AC88B7>wifi</fc> <quality>%"
             ] 10,
         --Run Date "<fc=#AA7158></fc> <fc=#D5C3B9>%F</fc> <fc=#AA7158></fc> <fc=#D5C3B9>%H:%M</fc>" "date" 10,
-        Run Date "<fc=#3F3051>%F</fc> <fc=#3F3051>%H:%M</fc>" "date" 10,
+        Run Date "<fc=#574E62>%F</fc> <fc=#574E62>%H:%M</fc>" "date" 10,
         --Run Com "getMasterVolume" [] "volumelevel" 1,
         Run Com "getMasterVolumeNoIcons" [] "volumelevel" 1,
         Run Com "getRedshift" [] "redshift" 60,

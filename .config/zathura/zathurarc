@@ -17,3 +17,5 @@ map = zoom in
 map - zoom out
 map + zoom 100%
 map i set recolor
+
+set font "Iosevka 9"

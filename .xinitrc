@@ -24,4 +24,5 @@ devmon &
 #exec i3
 #exec ck-launch-session dbus-launch i3
 exec ck-launch-session dbus-launch xmonad
+#exec ck-launch-session dbus-launch fvwm
 #exec wmaker

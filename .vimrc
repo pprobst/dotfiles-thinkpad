@@ -98,6 +98,18 @@ Plug 'jgdavey/tslime.vim'
 " Markdown preview
 Plug 'suan/vim-instant-markdown'
 
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'jalvesaq/Nvim-R'
+Plug 'gaalcaras/ncm-R'
+
+" Vim 8 only
+if !has('nvim')
+    Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+Plug 'ncm2/ncm2-ultisnips'
+
 if has('nvim')
     " Enable deoplete on startup
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -484,7 +496,7 @@ call plug#end()
         let g:syntastic_mode_map = {
             \ 'mode': 'active',
             \ 'active_filetypes':
-                \ ['c', 'cpp', 'perl', 'python', 'php', 'javascript', 'haskell'],
+                \ ['c', 'cpp', 'perl', 'python', 'php', 'javascript', 'haskell', 'r'],
             \ 'passive_filetypes': 
                 \ ['go'] }
 
