@@ -4,8 +4,7 @@
 
 Config {
     position = Top,
-    --font = "xft:Iosevka:size=10,M+ 1p:style=regular:size=10:antialias=true,Siji:size=10:antialias=true", -- (siji is converted to ttf!)
-    font = "xft:DejaVu Serif:size=10,M+ 1p:style=regular:size=10:antialias=true,Siji:size=10:antialias=true", -- (siji is converted to ttf!)
+    font = "xft:Iosevka:size=10,M+ 1p:style=regular:size=10:antialias=true,Siji:size=10:antialias=true", -- (siji is converted to ttf!)
     --font = "xft:cherry:size=9,Fixed:style=ja:size=10,Siji:size=10",
     bgColor = "#FEF6FB",
     fgColor = "#574E62",

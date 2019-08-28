@@ -61,7 +61,7 @@ myScreenshot = "maimn"
 myAreaScreenshot = "maims"
 
 -- Program launcher
-myLauncher = "dmenu_run -i -b -fn 'DejaVu Serif:pixelsize=13' -nb '#FEF6FB' -nf '#3F3051' -sb '#9EA3D2' -sf '#FFF6F6' -p '>'"
+myLauncher = "dmenu_run -i -b -fn 'Iosevka:pixelsize=13' -nb '#FEF6FB' -nf '#3F3051' -sb '#9EA3D2' -sf '#FFF6F6' -p '>'"
 
 -- File manager
 myFileManager = "vifmrun"
