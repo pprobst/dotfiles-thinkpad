@@ -61,7 +61,7 @@ myScreenshot = "maimn"
 myAreaScreenshot = "maims"
 
 -- Program launcher
-myLauncher = "dmenu_run -i -b -fn 'Iosevka:pixelsize=13' -nb '#FEF6FB' -nf '#3F3051' -sb '#9EA3D2' -sf '#FFF6F6' -p '>'"
+myLauncher = "dmenu_run -i -b -fn 'Iosevka:pixelsize=13' -nb '#0A101B' -nf '#C6AFC7' -sb '#38446C' -sf '#C6AFC7' -p '>'"
 
 -- File manager
 myFileManager = "vifmrun"
@@ -101,8 +101,8 @@ myManageHook = composeAll
 
 -- Colors and borders
 --
-myNormalBorderColor  = "#F3E6EE"
-myFocusedBorderColor = "#9A4B48"
+myNormalBorderColor  = "#141821"
+myFocusedBorderColor = "#38446C"
 
 titleBarTheme = def
   { activeColor = "#9740f9"
@@ -115,10 +115,10 @@ titleBarTheme = def
   }
 
 -- Window title color
-xmobarTitleColor = "#3F3051"
+xmobarTitleColor = "#694B69"
 
 -- Current workspace color
-xmobarCurrentWorkspaceColor = "#E28AB7"
+xmobarCurrentWorkspaceColor = "#694B69"
 
 -- Window border width
 myBorderWidth = 1
