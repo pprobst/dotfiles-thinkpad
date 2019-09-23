@@ -7,6 +7,7 @@ export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/Scripts:$PATH"
 export PATH="$HOME/Scripts/colorscripts/:$PATH"
 export PATH="/opt/java/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export GOPATH="$HOME/Documents/Prog/Go"
 export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
 
@@ -64,9 +65,9 @@ alias reboot='sudo reboot'
 alias poweroff='sudo poweroff'
 
 # sshfs
-alias sshfs-animu='sshfs probst@192.168.0.16:/home/probst/Animu/ /home/probst/ayanami'
-alias sshfs-ext='sshfs probst@192.168.0.16:/run/media/probst/Externo/ /home/probst/ayanami'
-alias sshfs-hiro='sshfs probst@192.168.0.16:/run/media/probst/Hiro/ /home/probst/ayanami'
+alias sshfs-animu='sshfs probst@192.168.0.10:/home/probst/Animu/ /home/probst/ayanami'
+alias sshfs-ext='sshfs probst@192.168.0.10:/run/media/probst/Externo/ /home/probst/ayanami'
+alias sshfs-hiro='sshfs probst@192.168.0.10:/run/media/probst/Hiro/ /home/probst/ayanami'
 
 # unmount ayanami (sshfs)
 alias usshfs='fusermount -u ~/ayanami'

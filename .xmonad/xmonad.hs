@@ -61,7 +61,7 @@ myScreenshot = "maimn"
 myAreaScreenshot = "maims"
 
 -- Program launcher
-myLauncher = "dmenu_run -i -b -fn 'Iosevka:pixelsize=13' -nb '#0A101B' -nf '#C6AFC7' -sb '#38446C' -sf '#C6AFC7' -p '>'"
+myLauncher = "dmenu_run -i -b -fn 'Fantasque Sans Mono:pixelsize=13' -nb '#0A101B' -nf '#C6AFC7' -sb '#38446C' -sf '#C6AFC7' -p '>'"
 
 -- File manager
 myFileManager = "vifmrun"

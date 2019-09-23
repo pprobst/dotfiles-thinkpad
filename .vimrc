@@ -72,9 +72,6 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 " Using a non-master branch
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
-" Plugin options
-Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-
 " Unmanaged plugin (manually installed and updated)
 " Plug '~/my-prototype-plugin'
 
@@ -109,6 +106,12 @@ if !has('nvim')
 endif
 
 Plug 'ncm2/ncm2-ultisnips'
+
+" Go support
+Plug 'stamblerre/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
+
+" Rust support
+Plug 'racer-rust/vim-racer'
 
 if has('nvim')
     " Enable deoplete on startup
@@ -210,7 +213,8 @@ call plug#end()
     set splitbelow                                  " splits go below w/focus
     set splitright                                  " vsplits go right w/focus
     set ttyfast                                     " for faster redraws etc
-    let g:go_highlight_trailing_whitespace_error=0  "Stop highlighting trailing whitespace for Go files
+    let g:go_highlight_trailing_whitespace_error=0  " stop highlighting trailing whitespace for Go files
+    let g:racer_experimental_completer=1          " complete function definition Rust
     if !has('nvim')
 		set ttymouse=xterm2
 	endif

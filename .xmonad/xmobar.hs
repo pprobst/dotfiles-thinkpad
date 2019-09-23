@@ -4,7 +4,7 @@
 
 Config {
     position = Top,
-    font = "xft:Iosevka:size=10,M+ 1p:style=regular:size=10:antialias=true,Siji:size=10:antialias=true", -- (siji is converted to ttf!)
+    font = "xft:Fantasque Sans Mono:size=10,M+ 1p:style=regular:size=10:antialias=true,Siji:size=10:antialias=true", -- (siji is converted to ttf!)
     --font = "xft:cherry:size=9,Fixed:style=ja:size=10,Siji:size=10",
     bgColor = "#0A101B",
     fgColor = "#C6AFC7",
@@ -61,5 +61,5 @@ Config {
         ],
     sepChar = "%",
     alignSep = "**",
-    template = "%StdinReader% ** %volumelevel% %bat% %cpu% %coretemp% %memory% %wlp3s0wi% <fc=#616293>[</fc> <fc=#3F3051>%date%</fc> <fc=#AC88B7>]</fc> %getRedshift%"
+    template = "%StdinReader% ** %volumelevel% %bat% %cpu% %coretemp% %memory% %wlp3s0wi% <fc=#616293>[</fc> <fc=#3F3051>%date%</fc> <fc=#616293>]</fc> %getRedshift%"
 }
