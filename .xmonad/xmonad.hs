@@ -80,20 +80,24 @@ myWorkspaces = clickable $ [" 一"," 二"," 三"," 四"," 五"," 六"] ++ map sh
 -- use xprop to find relations!
 --
 myManageHook = composeAll
-    [ resource  =? "desktop_window" --> doIgnore
-    , className =? "Gcolor2"        --> doCenterFloat
-    , className =? "Steam"          --> doFullFloat
-    , className =? "Gimp"           --> doFloat
-    , resource  =? "pqiv"           --> doCenterFloat
-    , className =? "File-roller"    --> doCenterFloat
-    , className =? "xarchiver"      --> doCenterFloat
-    , className =? "Lxappearance"   --> doCenterFloat
-    , className =? "mpv"            --> doFullFloat
-    , className =? "crawl-tiles"    --> doFullFloat
-    , className =? "Umineko5to8"    --> doFullFloat
-    , className =? "deadcells"      --> doFullFloat
-    , className =? "PapersPlease"   --> doFullFloat
+    [ resource  =? "desktop_window"               --> doIgnore
+    , className =? "Gcolor2"                      --> doCenterFloat
+    , className =? "Steam"                        --> doFullFloat
+    , className =? "Gimp"                         --> doFloat
+    , resource  =? "pqiv"                         --> doCenterFloat
+    , className =? "File-roller"                  --> doCenterFloat
+    , className =? "xarchiver"                    --> doCenterFloat
+    , className =? "Lxappearance"                 --> doCenterFloat
+    , className =? "mpv"                          --> doFullFloat
+    , className =? "crawl-tiles"                  --> doFullFloat
+    , className =? "Umineko5to8"                  --> doFullFloat
+    , className =? "deadcells"                    --> doFullFloat
+    , className =? "PapersPlease"                 --> doFullFloat
     , className =? "StreetsOfRogueLinux.x86_64"   --> doFullFloat
+    , className =? "StreetsOfRogueLinux.x86_64"   --> doFullFloat
+    , className =? "cogmind.exe"                  --> doFullFloat
+    , className =? "CoQ.x86_64"                   --> doFullFloat
+    , className =? "brogue"                       --> doCenterFloat
     , isDialog --> doCenterFloat
     , isFullscreen --> (doF W.focusDown <+> doFullFloat)]
 
@@ -102,7 +106,7 @@ myManageHook = composeAll
 -- Colors and borders
 --
 myNormalBorderColor  = "#141821"
-myFocusedBorderColor = "#38446C"
+myFocusedBorderColor = "#694B69"
 
 titleBarTheme = def
   { activeColor = "#9740f9"

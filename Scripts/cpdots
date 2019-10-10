@@ -12,7 +12,7 @@ cp ~/.xmonad/xmobar.hs /home/probst/Repos/dotfiles-thinkpad/.xmonad
 cp -r ~/.config/compton /home/probst/Repos/dotfiles-thinkpad/.config
 cp -r ~/.config/dunst /home/probst/Repos/dotfiles-thinkpad/.config
 cp -r ~/.config/htop /home/probst/Repos/dotfiles-thinkpad/.config
-cp -r ~/.config/mpd /home/probst/Repos/dotfiles-thinkpad/.config
+cp -r ~/.config/mpd/mpd.conf /home/probst/Repos/dotfiles-thinkpad/.config
 cp -r ~/.config/mpv /home/probst/Repos/dotfiles-thinkpad/.config
 cp -r ~/.config/neofetch /home/probst/Repos/dotfiles-thinkpad/.config
 cp -r ~/.config/pcmanfm/default /home/probst/Repos/dotfiles-thinkpad/.config/pcmanfm

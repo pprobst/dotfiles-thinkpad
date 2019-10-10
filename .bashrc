@@ -10,6 +10,7 @@ export PATH="/opt/java/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export GOPATH="$HOME/Documents/Prog/Go"
 export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
+export PATH="$HOME/Software/rabbitmq_server-3.8.0/sbin:$PATH"
 
 # If not running interactively, don't do anything
 export VISUAL=nvim
@@ -65,9 +66,9 @@ alias reboot='sudo reboot'
 alias poweroff='sudo poweroff'
 
 # sshfs
-alias sshfs-animu='sshfs probst@192.168.0.10:/home/probst/Animu/ /home/probst/ayanami'
-alias sshfs-ext='sshfs probst@192.168.0.10:/run/media/probst/Externo/ /home/probst/ayanami'
-alias sshfs-hiro='sshfs probst@192.168.0.10:/run/media/probst/Hiro/ /home/probst/ayanami'
+alias sshfs-animu='sshfs probst@192.168.0.4:/home/probst/Animu/ /home/probst/ayanami'
+alias sshfs-ext='sshfs probst@192.168.0.4:/run/media/probst/Externo/ /home/probst/ayanami'
+alias sshfs-hiro='sshfs probst@192.168.0.4:/run/media/probst/Hiro/ /home/probst/ayanami'
 
 # unmount ayanami (sshfs)
 alias usshfs='fusermount -u ~/ayanami'
