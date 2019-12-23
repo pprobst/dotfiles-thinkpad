@@ -61,7 +61,7 @@ myScreenshot = "maimn"
 myAreaScreenshot = "maims"
 
 -- Program launcher
-myLauncher = "dmenu_run -i -b -fn 'Fantasque Sans Mono:pixelsize=13' -nb '#0A101B' -nf '#C6AFC7' -sb '#38446C' -sf '#C6AFC7' -p '>'"
+myLauncher = "dmenu_run -i -b -fn 'Fantasque Sans Mono:pixelsize=14' -nb '#DED2D2' -nf '#806D72' -sb '#917C82' -sf '#E4D8D8' -p '>'"
 
 -- File manager
 myFileManager = "vifmrun"
@@ -94,10 +94,11 @@ myManageHook = composeAll
     , className =? "deadcells"                    --> doFullFloat
     , className =? "PapersPlease"                 --> doFullFloat
     , className =? "StreetsOfRogueLinux.x86_64"   --> doFullFloat
-    , className =? "StreetsOfRogueLinux.x86_64"   --> doFullFloat
     , className =? "cogmind.exe"                  --> doFullFloat
     , className =? "CoQ.x86_64"                   --> doFullFloat
     , className =? "brogue"                       --> doCenterFloat
+    , title     =? "TheSilverCase"                --> doFullFloat
+    , title     =? "WazHack"                      --> doFullFloat
     , isDialog --> doCenterFloat
     , isFullscreen --> (doF W.focusDown <+> doFullFloat)]
 
@@ -105,8 +106,8 @@ myManageHook = composeAll
 
 -- Colors and borders
 --
-myNormalBorderColor  = "#141821"
-myFocusedBorderColor = "#694B69"
+myNormalBorderColor  = "#DED2D2"
+myFocusedBorderColor = "#BA6E65"
 
 titleBarTheme = def
   { activeColor = "#9740f9"
@@ -122,10 +123,10 @@ titleBarTheme = def
 xmobarTitleColor = "#694B69"
 
 -- Current workspace color
-xmobarCurrentWorkspaceColor = "#694B69"
+xmobarCurrentWorkspaceColor = "#A2B1B7"
 
 -- Window border width
-myBorderWidth = 1
+myBorderWidth = 2
 
 ------------------------------------------------------------------------
 

@@ -124,14 +124,12 @@ endif
 " THEMES "
 Plug 'trusktr/seti.vim'
 Plug 'chriskempson/base16-vim'
-Plug 'w0ng/vim-hybrid'
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
 Plug 'noahfrederick/vim-hemisu'
 Plug 'chriskempson/tomorrow-theme'
 Plug 'phanviet/vim-monokai-pro'
 Plug 'nightsense/cosmic_latte'
-Plug 'nightsense/wonka'
 Plug 'nightsense/snow'
 Plug 'lifepillar/vim-solarized8'
 Plug 'dylanaraps/wal.vim'
@@ -148,14 +146,13 @@ call plug#end()
     """ Syntax highlighting {{{
         filetype plugin indent on                   " detect file plugin+indent
         syntax on                                   " syntax highlighting
-        set background=dark                       " we're using a dark bg
-        colorscheme wal                          " colorscheme from plugin
+        set background=light
+        colorscheme snow                             " colorscheme from plugin
         """ Force behavior and filetypes, and by extension highlighting {{{
             augroup FileTypeRules
                 autocmd!
                 autocmd BufNewFile,BufRead *.md set ft=markdown tw=79
                 autocmd BufNewFile,BufRead *.tex set ft=tex tw=79
-                autocmd BufNewFile,BufRead *.txt set ft=sh tw=79
             augroup END
         """ }}}
         """ 256 colors for maximum jellybeans bling. See commit log for info {{{
@@ -336,6 +333,9 @@ call plug#end()
         " Scroll up/down lines from 'scroll' option, default half a screen
         map <C-j> <C-d>
         map <C-k> <C-u>
+
+        "Opens NerdTree
+        map <C-n> :NERDTreeToggle<CR>
 
         " Treat wrapped lines as normal lines
         nnoremap j gj
