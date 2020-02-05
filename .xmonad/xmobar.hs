@@ -4,7 +4,7 @@
 
 Config {
     position = Top,
-    font = "xft:Fantasque Sans Mono:size=10,M+ 1p:style=regular:size=10:antialias=true,Siji:size=10:antialias=true", -- (siji is converted to ttf!)
+    font = "xft:Go Mono:size=9,M+ 1p:style=regular:size=9:antialias=true,Siji:size=10:antialias=true", -- (siji is converted to ttf!)
     --font = "xft:cherry:size=9,Fixed:style=ja:size=10,Siji:size=10",
     bgColor = "#E4D8D8",
     fgColor = "#806D72",
@@ -24,9 +24,9 @@ Config {
             "-H", "70",
             "-h", "#C83737"
             ] 10,
-        Run CoreTemp [
+        Run MultiCoreTemp [
             --"-t", "<fc=#AA7158></fc> <core0>°C",
-            "-t", "<fc=#B45C52>temp</fc> <core0>°C",
+            "-t", "<fc=#B45C52>temp</fc> <avg>°C",
             "-L", "40", "-H", "75",
             "-h", "#C83737"
             ] 10,
@@ -61,5 +61,5 @@ Config {
         ],
     sepChar = "%",
     alignSep = "**",
-    template = "%StdinReader% ** %volumelevel% %bat% %cpu% %coretemp% %memory% %wlp3s0wi% <fc=#806D72>[</fc> <fc=#806D72>%date%</fc> <fc=#806D72>]</fc> %getRedshift%"
+    template = "%StdinReader% ** %volumelevel% %bat% %cpu% %multicoretemp% %memory% %wlp3s0wi% <fc=#806D72>[</fc> <fc=#806D72>%date%</fc> <fc=#806D72>]</fc> %getRedshift%"
 }

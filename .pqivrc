@@ -1,6 +1,6 @@
 [options]
-transparent-background=1
-fade=0
+transparent-background=0
+fade=1
 hide-info-box=1
 
 [keybindings]

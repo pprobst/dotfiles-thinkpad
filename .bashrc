@@ -3,7 +3,6 @@
 #
 
 PATH=~/.local/bin:$PATH
-export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/Scripts:$PATH"
 export PATH="$HOME/Scripts/colorscripts/:$PATH"
 export PATH="/opt/java/bin:$PATH"
@@ -37,15 +36,6 @@ White='\e[0;37m'        # White
 #PS1='[\u@\h \W]\$ ' # default
 PS1='\w » '
 
-# Use bash-completion, if available
-[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
-    . /usr/share/bash-completion/bash_completion
-
-# xbps aliases
-alias xinstall='sudo xbps-install'
-alias xremove='sudo xbps-remove'
-alias xquery='xbps-query'
-
 # python
 alias python='python3'
 
@@ -62,8 +52,10 @@ alias xclip='xclip -selection c'
 # displays system info in a fancy way
 alias nf='neofetch'
 
-alias reboot='sudo reboot'
-alias poweroff='sudo poweroff'
+# user power commands (requires polkit & systemd)
+alias reboot='systemctl reboot'
+alias poweroff='systemctl poweroff'
+alias halt='systemctl halt'
 
 # sshfs
 alias sshfs-animu='sshfs probst@192.168.0.4:/home/probst/Animu/ /home/probst/ayanami'

@@ -61,7 +61,7 @@ myScreenshot = "maimn"
 myAreaScreenshot = "maims"
 
 -- Program launcher
-myLauncher = "dmenu_run -i -b -fn 'Fantasque Sans Mono:pixelsize=14' -nb '#DED2D2' -nf '#806D72' -sb '#917C82' -sf '#E4D8D8' -p '>'"
+myLauncher = "dmenu_run -i -b -fn 'Go Mono:pixelsize=13' -nb '#DED2D2' -nf '#806D72' -sb '#917C82' -sf '#E4D8D8' -p '>'"
 
 -- File manager
 myFileManager = "vifmrun"
@@ -316,7 +316,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 myStartupHook = do
             spawnOnce "feh --bg-fill /home/probst/Images/Wallpapers/current-thinkpad.png"
             --spawnOnce "feh --bg-tile /home/probst/Images/Wallpapers/current-thinkpad.png"
-            setWMName "LG3D"
+            --setWMName "LG3D"
 
 ------------------------------------------------------------------------
 

@@ -211,7 +211,8 @@ call plug#end()
     set splitright                                  " vsplits go right w/focus
     set ttyfast                                     " for faster redraws etc
     let g:go_highlight_trailing_whitespace_error=0  " stop highlighting trailing whitespace for Go files
-    let g:racer_experimental_completer=1          " complete function definition Rust
+    let g:racer_experimental_completer=1            " complete function definition Rust
+    let g:rustfmt_autosave = 1                      " automatically run :RustFmt when saving a buffer
     if !has('nvim')
 		set ttymouse=xterm2
 	endif
