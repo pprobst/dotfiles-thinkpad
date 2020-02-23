@@ -61,7 +61,7 @@ myScreenshot = "maimn"
 myAreaScreenshot = "maims"
 
 -- Program launcher
-myLauncher = "dmenu_run -i -b -fn 'Go Mono:pixelsize=13' -nb '#DED2D2' -nf '#806D72' -sb '#917C82' -sf '#E4D8D8' -p '>'"
+myLauncher = "dmenu_run -i -b -fn 'Go Mono:pixelsize=13' -nb '#222222' -nf '#FAFAFA' -sb '#A672A3' -sf '#FAFAFA' -p '>'"
 
 -- File manager
 myFileManager = "vifmrun"
@@ -82,6 +82,7 @@ myWorkspaces = clickable $ [" 一"," 二"," 三"," 四"," 五"," 六"] ++ map sh
 myManageHook = composeAll
     [ resource  =? "desktop_window"               --> doIgnore
     , className =? "Gcolor2"                      --> doCenterFloat
+    , className =? "Gcolor3"                      --> doCenterFloat
     , className =? "Steam"                        --> doFullFloat
     , className =? "Gimp"                         --> doFloat
     , resource  =? "pqiv"                         --> doCenterFloat
@@ -106,8 +107,8 @@ myManageHook = composeAll
 
 -- Colors and borders
 --
-myNormalBorderColor  = "#DED2D2"
-myFocusedBorderColor = "#BA6E65"
+myNormalBorderColor  = "#FAFAFA"
+myFocusedBorderColor = "#222222"
 
 titleBarTheme = def
   { activeColor = "#9740f9"
@@ -120,13 +121,13 @@ titleBarTheme = def
   }
 
 -- Window title color
-xmobarTitleColor = "#694B69"
+xmobarTitleColor = "#FAFAFA"
 
 -- Current workspace color
-xmobarCurrentWorkspaceColor = "#A2B1B7"
+xmobarCurrentWorkspaceColor = "#DB6370"
 
 -- Window border width
-myBorderWidth = 2
+myBorderWidth = 1
 
 ------------------------------------------------------------------------
 
@@ -314,8 +315,8 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
 -- Startup hook
 myStartupHook = do
-            spawnOnce "feh --bg-fill /home/probst/Images/Wallpapers/current-thinkpad.png"
-            --spawnOnce "feh --bg-tile /home/probst/Images/Wallpapers/current-thinkpad.png"
+            --spawnOnce "feh --bg-fill /home/probst/Images/Wallpapers/current-thinkpad.png"
+            spawnOnce "feh --bg-tile /home/probst/Images/Wallpapers/current-thinkpad.png"
             --setWMName "LG3D"
 
 ------------------------------------------------------------------------
