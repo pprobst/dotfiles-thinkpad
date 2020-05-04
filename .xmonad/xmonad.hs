@@ -61,7 +61,7 @@ myScreenshot = "maimn"
 myAreaScreenshot = "maims"
 
 -- Program launcher
-myLauncher = "dmenu_run -i -b -fn 'Go Mono:pixelsize=13' -nb '#222222' -nf '#FAFAFA' -sb '#A672A3' -sf '#FAFAFA' -p '>'"
+myLauncher = "dmenu_run -i -b -fn 'Iosevka:pixelsize=13' -nb '#0C121B' -nf '#C9B8D1' -sb '#38446C' -sf '#C9B8D1' -p '>'"
 
 -- File manager
 myFileManager = "vifmrun"
@@ -89,6 +89,7 @@ myManageHook = composeAll
     , className =? "File-roller"                  --> doCenterFloat
     , className =? "xarchiver"                    --> doCenterFloat
     , className =? "Lxappearance"                 --> doCenterFloat
+    , className =? "matplotlib"                   --> doCenterFloat
     , className =? "mpv"                          --> doFullFloat
     , className =? "crawl-tiles"                  --> doFullFloat
     , className =? "Umineko5to8"                  --> doFullFloat
@@ -98,17 +99,22 @@ myManageHook = composeAll
     , className =? "cogmind.exe"                  --> doFullFloat
     , className =? "CoQ.x86_64"                   --> doFullFloat
     , className =? "brogue"                       --> doCenterFloat
+    , className =? "sun-awt-X11-XFramePeer"       --> doCenterFloat
     , title     =? "TheSilverCase"                --> doFullFloat
+    , title     =? "Environmental Station Alpha"  --> doFullFloat
     , title     =? "WazHack"                      --> doFullFloat
-    , isDialog --> doCenterFloat
-    , isFullscreen --> (doF W.focusDown <+> doFullFloat)]
+    , title     =? "TCC"                          --> doCenterFloat
+    , title     =? "ImageJ"                       --> doCenterFloat
+    , title     =? "(Fiji Is Just) ImageJ"        --> doCenterFloat
+    , isDialog                                    --> doCenterFloat
+    , isFullscreen                                --> (doF W.focusDown <+> doFullFloat)]
 
 ------------------------------------------------------------------------
 
 -- Colors and borders
 --
-myNormalBorderColor  = "#FAFAFA"
-myFocusedBorderColor = "#222222"
+myNormalBorderColor  = "#0C121B"
+myFocusedBorderColor  = "#694B69"
 
 titleBarTheme = def
   { activeColor = "#9740f9"
@@ -121,13 +127,13 @@ titleBarTheme = def
   }
 
 -- Window title color
-xmobarTitleColor = "#FAFAFA"
+xmobarTitleColor = "#744474"
 
 -- Current workspace color
-xmobarCurrentWorkspaceColor = "#DB6370"
+xmobarCurrentWorkspaceColor = "#744474"
 
 -- Window border width
-myBorderWidth = 1
+myBorderWidth = 2
 
 ------------------------------------------------------------------------
 
@@ -170,6 +176,10 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_z),
      spawn "getFortune")
 
+  -- Eat a fortune cookie
+  , ((modMask, xK_e),
+     spawn "dmenuunicode")
+
   -- Weather
   , ((modMask, xK_w),
      spawn "getWttr")
@@ -203,16 +213,20 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Decrease vol
   , ((modMask .|. controlMask, xK_j),
      spawn "amixer -q set Master 5%- unmute")
+  , ((modMask, xK_minus),
+     spawn "amixer -q set Master 5%- unmute")
   , ((0, 0x1008ff11), 
      spawn "amixer -q set Master 5%- unmute")
 
   -- Increase vol
   , ((modMask .|. controlMask, xK_k),
      spawn "amixer -q set Master 5%+ unmute")
+  , ((modMask, xK_equal),
+     spawn "amixer -q set Master 5%+ unmute")
   , ((0, 0x1008ff13), 
      spawn "amixer -q set Master 5%+ unmute")
 
-  -- Increase brightwness
+  -- Increase brightness
   , ((0, 0x1008ff02), 
      spawn "xbacklight -inc 10")
 
@@ -315,9 +329,9 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
 -- Startup hook
 myStartupHook = do
-            --spawnOnce "feh --bg-fill /home/probst/Images/Wallpapers/current-thinkpad.png"
-            spawnOnce "feh --bg-tile /home/probst/Images/Wallpapers/current-thinkpad.png"
-            --setWMName "LG3D"
+            spawnOnce "feh --bg-fill /home/probst/Images/Wallpapers/current-thinkpad.png"
+            --spawnOnce "feh --bg-tile /home/probst/Images/Wallpapers/current-thinkpad.png"
+            setWMName "LG3D"
 
 ------------------------------------------------------------------------
 

@@ -11,6 +11,9 @@ export GOPATH="$HOME/Documents/Prog/Go"
 export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
 export PATH="$HOME/Software/rabbitmq_server-3.8.0/sbin:$PATH"
 
+# Stop bugging me Pastel!
+export PASTEL_COLOR_MODE=24bit
+
 # If not running interactively, don't do anything
 export VISUAL=nvim
 export EDITOR=nvim
@@ -85,7 +88,7 @@ alias yv='youtube-viewer'
 
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
-source /bin/activate.sh
+#source /bin/activate.sh
 
 # Fish shell
 [ -x /bin/fish ] && SHELL=/bin/fish exec /bin/fish

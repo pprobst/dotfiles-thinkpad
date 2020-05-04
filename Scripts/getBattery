@@ -6,15 +6,15 @@ bat_level=${bat_level%?}
 charging=$(acpi -b | grep -o 'Charging\|Unknown\|Full')
 
 if [ $charging = "Charging" ] || [ $charging = "Unknown" ]; then
-    echo "<fc=#AA7158> </fc>$bat_level%"
+    echo "<fc=#7878D1> </fc>$bat_level%"
 elif [ $charging = "Full" ]; then
-    echo "<fc=#AA7158> </fc>$bat_level%"
+    echo "<fc=#7878D1> </fc>$bat_level%"
 elif [ $bat_level -le "15" ]; then
-    echo "<fc=#AA7158></fc><fc=#C83737>$bat_level</fc>%"
+    echo "<fc=#7878D1></fc><fc=#C83737>$bat_level</fc>%"
 elif [ $bat_level -ge "15" ] && [ $bat_level -lt "55" ]; then
-    echo "<fc=#AA7158> </fc>$bat_level%"
+    echo "<fc=#7878D1> </fc>$bat_level%"
 elif [ $bat_level -ge "55" ]; then
-    echo "<fc=#AA7158> </fc>$bat_level%"
+    echo "<fc=#7878D1> </fc>$bat_level%"
 fi
 
 exit 0

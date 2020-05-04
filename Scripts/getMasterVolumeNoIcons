@@ -4,9 +4,9 @@
 vol=$(amixer get Master | awk -F'[]%[]' '/%/ {if ($7 == "off") { print "x" } else { print $2 }}' | head -n 1)
 
 if [ $vol = "x" ]; then
-    echo "<fc=#A6B0D4>vol</fc> x"
+    echo "<fc=#494D76>vol</fc> x"
 else
-    echo "<fc=#A6B0D4>vol</fc> $vol%"
+    echo "<fc=#494D76>vol</fc> $vol%"
 fi
 
 exit 0
